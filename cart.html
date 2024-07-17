@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Restaurant Cart Page</title>
+    <link href="bootstrap.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" >
+    <link rel="icon" href="resources/Brown%20cute%20cake%20and%20bakery%20logo.svg">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
+
+    <!-- smooth scroll-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- smooth scroll-->
+  </head>
+
+  <body>
+    <div id="preloader"></div>
+    <!--Header-->
+    <div id="header-placeholder"></div>
+    <!--Header-->
+    <div class="container-fluid">
+      <div class="cart-page mt-5 mb-5">
+        <h2 class="text-center mb-5 page-title">Your Cart</h2>
+        <div class="row">
+          <div class="col-lg-8 mb-4 mt-5 table-responsive justify-content-center">
+            <table class="table table-bordered cart-table">
+              <thead class="table-light">
+                <tr>
+                  <th></th>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="resources/home3/menu/1.png"
+                      alt="Grilled Chicken"
+                      class="product-thumbnail"
+                    >
+                  </td>
+                  <td class="product-name">Grilled Chicken</td>
+                  <td class="product-price">$12.99</td>
+                  <td>
+                    <input type="number" class="form-control" value="1" >
+                  </td>
+                  <td class="product-total">$12.99</td>
+                  <td>
+                    <button class="btn btn-danger btn-sm">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="resources/home3/menu/2.png"
+                      alt="Grilled Chicken"
+                      class="product-thumbnail"
+                    >
+                  </td>
+                  <td class="product-name">Beef Steak</td>
+                  <td class="product-price">$15.99</td>
+                  <td>
+                    <input type="number" class="form-control" value="1" >
+                  </td>
+                  <td class="product-total">$15.99</td>
+                  <td>
+                    <button class="btn btn-danger btn-sm">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <!-- Add more items as needed -->
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-4 mt-5">
+            <div class="order-summary">
+              <h4>Order Summary</h4>
+              <div class="mb-3 d-flex justify-content-between">
+                <span>Subtotal</span>
+                <span>$28.98</span>
+              </div>
+              <div class="mb-3 d-flex justify-content-between">
+                <span>Tax</span>
+                <span>$2.90</span>
+              </div>
+              <div class="mb-3 d-flex justify-content-between total">
+                <span>Total</span>
+                <span>$31.88</span>
+              </div>
+              <button onclick="checkOut();" class="btn btn-danger btn-block">
+                Proceed to Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+<div class="container mb-5">
+
+    <div class="row g-4 mt-5 mb-5 d-flex justify-content-center">
+        <!-- Watchlist Item 1 -->
+        <div class="watchlist-card col-md-6 col-lg-3">
+          <div class="card watchlist-item">
+            <div class="card-img-container">
+              <img
+                src="resources/home3/menu/1.png"
+                class="card-img-top"
+                alt="Dish Image"
+              >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dish Name 1</h5>
+              <p class="card-text">
+                A short description of the dish goes here.
+              </p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Watchlist Item 2 -->
+        <div class="watchlist-card col-md-6 col-lg-3">
+          <div class="card watchlist-item">
+            <div class="card-img-container">
+              <img
+                src="resources/home3/menu/2.png"
+                class="card-img-top"
+                alt="Dish Image"
+              >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dish Name 2</h5>
+              <p class="card-text">
+                A short description of the dish goes here.
+              </p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Watchlist Item 3 -->
+        <div class="watchlist-card col-md-6 col-lg-3">
+          <div class="card watchlist-item">
+            <div class="card-img-container">
+              <img
+                src="resources/home3/menu/3.png"
+                class="card-img-top"
+                alt="Dish Image"
+              >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dish Name 3</h5>
+              <p class="card-text">
+                A short description of the dish goes here.
+              </p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+       
+      </div>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <button id="back-to-top" class="back-to-top">
+      <i class="bi bi-triangle-fill"></i>
+    </button>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

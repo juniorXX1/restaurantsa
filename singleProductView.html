@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Single Product View</title>
+    <link rel="icon" href="resources/Brown%20cute%20cake%20and%20bakery%20logo.svg">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- smooth scroll-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- smooth scroll-->
+
+   
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <!--Header-->
+    <div id="header-placeholder"></div>
+    <!--Header-->
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-12 mt-0  singleProduct">
+                <div class="row">
+                    <div class="col-12" style="padding: 20px;">
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 col-lg-6 order-2 order-lg-1 sp-imgs">
+
+                                <div class="row sbig-img">
+                                    <li class="col-12 col-md-12 col-lg-12 d-flex flex-column justify-content-center align-items-center mb-1">
+                                        <div class="image-zoom-container" id="imageZoomContainer">
+                                            <!-- Main image will be added dynamically by JavaScript -->
+                                        </div>
+                                    </li>
+                                </div>
+
+                                <div class="row d-flex flex-row justify-content-center align-items-center ssmall-img ">
+                                    <div class="col-lg-2 col-md-2">
+                                        <div class="">
+                                          <img src="resources/home3/menu/12.png" id="SPproduct_img1" onclick="changeMainImgSp(1);" class="img-thumbnail mt-1 mb-1" alt="">
+                                        </div>
+                                     </div>
+                                    <div class="col-lg-2 col-md-2">
+                                        <div class="">
+                                          <img src="resources/home3/menu/2.png" id="SPproduct_img2" onclick="changeMainImgSp(2);" class="img-thumbnail mt-1 mb-1" alt="">
+                                        </div>
+                                    </div>
+                                      
+                                    <div class="col-lg-2 col-md-2">
+                                        <div class="">
+                                          <img src="resources/home3/menu/3.png" id="SPproduct_img3" onclick="changeMainImgSp(3);" class="img-thumbnail mt-1 mb-1" alt="">
+                                        </div>
+                                    
+                                   </div>
+                                   <div class="col-lg-2 col-md-2">
+                                    <div class="">
+                                      <img src="resources/home3/menu/4.png" id="SPproduct_img4" onclick="changeMainImgSp(4);" class="img-thumbnail mt-1 mb-1" alt="">
+                                    </div>
+                                
+                               </div>
+             
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6 order-3 ">
+                                <div class="row single-product-details">
+                                    <div class="col-11 offset-1">
+
+                                        <div class="row mb-1">
+                                            <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                                    <li class="breadcrumb-item active" aria-current="page">Single Product View</li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+
+                                        <h2 class="mb-5">Crab Curry</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac libero nec justo ultricies tincidunt. Nulla facilisi.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac libero nec justo ultricies tincidunt. Nulla facilisi.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac libero nec justo ultricies tincidunt. Nulla facilisi.
+                </p>
+                <div class="single-price">$10.99</div>
+
+                <div class="quantity mt-3">
+                    <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                    <input type="text" id="quantity-input" value="1" min="1">
+                    <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                </div>
+                
+                <div class="mt-3">
+                    <p><strong>Ingredients:</strong> Tomato, Mozzarella, Crabs, Olive Oil</p>
+                    <p><strong>Calories:</strong> 250 kcal</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 d-grid mt-2">
+                                <button onclick="checkOut();" class="btn btn-success fw-bold" type="submit" id="payhere-payment">Pay Now</button>
+
+                            </div>
+                            <div class="col-lg-4 col-12 d-grid mt-2">
+                                <button class="btn btn-primary fw-bold" >Add To Cart</button>
+                            </div>
+                            <div class="col-lg-4 col-12 d-grid mt-2">
+                                <button class="btn btn-outline-dark" >
+                                    <i class="bi bi-heart-fill fs-4 text-danger"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container mb-5">
+            <div class="row ingrediants">
+                <div class="col-12 text-center">
+                    <h2>Ingredients</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row ingrediants-details">
+                <div class="col-12  col-lg-8 col-md-8">
+                    <div class="row px-5">
+                        <div class="col-6 col-md-4 ingredient-card">
+                            <img src="https://via.placeholder.com/100" alt="Chicken">
+                            <p>Crabs</p>
+                            <p>1 Kg</p>
+                        </div>
+                        <div class="col-6 col-md-4 ingredient-card">
+                            <img src="https://via.placeholder.com/100" alt="Wild garlic">
+                            <p>Wild garlic</p>
+                            <p>12x</p>
+                        </div>
+                        <div class="col-6 col-md-4 ingredient-card">
+                            <img src="https://via.placeholder.com/100" alt="Salad Leaves">
+                            <p>Onion</p>
+                            <p>250 g</p>
+                        </div>
+                 
+                        <div class="col-6 col-md-4 ingredient-card">
+                            <img src="https://via.placeholder.com/100" alt="Cinnamon sticks">
+                            <p>butter</p>
+                            <p>75 g</p>
+                        </div>
+                        <div class="col-6 col-md-4 ingredient-card">
+                            <img src="https://via.placeholder.com/100" alt="Onion">
+                            <p>ground pepper</p>
+                            <p>500 g</p>
+                        </div>
+                        <div class="col-6 col-md-4 ingredient-card">
+                            <img src="https://via.placeholder.com/100" alt="Tomato">
+                            <p>Tomato</p>
+                            <p>500 g</p>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4 recipe-info px-5">
+                    <img src="https://via.placeholder.com/300" alt="Recipe Image" class="img-fluid mb-3">
+                    <p><strong>Cooking Time:</strong> 30 min</p>
+                    <p><strong>Difficulty:</strong> Medium</p>
+                    <p><strong>Servings:</strong> 03</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+  
+  <div  id="footer-placeholder"></div>
+
+    </div>
+
+    <button id="back-to-top" class="back-to-top"><i class="bi bi-triangle-fill"></i></button>
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+  
+  
+  </body>
+</html>

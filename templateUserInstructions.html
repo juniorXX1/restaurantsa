@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/Brown%20cute%20cake%20and%20bakery%20logo.svg">
+    <link href="style.css" rel="stylesheet" >
+    <link href="bootstrap.css" rel="stylesheet" >
+ 
+    <title>Product Modification Instructions</title>
+   
+</head>
+<body>
+    <div class="container-fluid user-instructions">
+        <div class="container mt-5 mb-5">
+
+<h1>Product Modification Instructions</h1>
+
+<div class="section">
+    <h2>Step 1: Accessing Product Files</h2>
+    <p>To start modifying your product, you need to access the product files:</p>
+    <ol>
+        <li>Locate the downloaded product package on your computer.</li>
+        <li>Extract the contents of the ZIP file into a folder.</li>
+        <li>Open the folder to view the extracted files, including HTML, CSS, and JavaScript files, as well as any images or assets.</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Step 2: Modifying HTML Content</h2>
+    <p>To change the content of the product, follow these steps:</p>
+    <ol>
+        <li>Open the HTML file you want to modify in a text editor (e.g., Notepad++, VS Code, Sublime Text).</li>
+        <li>Locate the section or element you wish to modify. Look for tags such as <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, or <code>&lt;div&gt;</code>.</li>
+        <li>Update the content within these tags. For example, to change a title:</li>
+        <div class="code">
+            &lt;h1&gt;Old Title&lt;/h1&gt;<br>
+            &lt;!-- Change to --&gt;<br>
+            &lt;h1&gt;New Title&lt;/h1&gt;
+        </div>
+        <li>Save your changes.</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Step 3: Modifying CSS Styles</h2>
+    <p>To change the styling of your product:</p>
+    <ol>
+        <li>Open the CSS file(s) in a text editor.</li>
+        <li>Identify the class or ID selectors you want to modify. For instance:</li>
+        <div class="code">
+            .header {<br>
+            &nbsp;&nbsp;background-color: #f0f0f0;<br>
+            &nbsp;&nbsp;color: #333;<br>
+            }
+        </div>
+        <li>Update the CSS properties as needed. For example, to change the background color:</li>
+        <div class="code">
+            .header {<br>
+            &nbsp;&nbsp;background-color: #e7f4e4;<br>
+            }
+        </div>
+        <li>Save the CSS file.</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Step 4: Updating Images</h2>
+    <p>To replace or add new images:</p>
+    <ol>
+        <li>Locate the <code>images</code> folder within your project directory.</li>
+        <li>Replace existing images with new images of the same file name or update the image references in the HTML file to point to new images.</li>
+        <li>Ensure that image paths in the HTML or CSS are correctly pointing to the new image locations.</li>
+        <div class="code">
+            &lt;img src="images/old-image.jpg" alt="Old Image"&gt;<br>
+            &lt;!-- Change to --&gt;<br>
+            &lt;img src="images/new-image.jpg" alt="New Image"&gt;
+        </div>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Step 5: Testing Your Modifications</h2>
+    <p>To ensure your changes look and function as expected:</p>
+    <ol>
+        <li>Open the modified HTML file(s) in a web browser.</li>
+        <li>Check that all modifications are displayed correctly and that there are no errors.</li>
+        <li>Test across different browsers and devices to ensure compatibility and responsiveness.</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Step 6: Packaging and Deployment</h2>
+    <p>After finalizing your modifications:</p>
+    <ol>
+        <li>Repackage your modified files into a ZIP archive.</li>
+        <li>If deploying to a web server, upload the ZIP archive and extract it in the appropriate directory.</li>
+        <li>Verify that the live site reflects the changes.</li>
+    </ol>
+</div>
+
+<h1>css Modification Instructions</h1>
+
+<div class="section">
+    <h2>1. Center Text in `.form3` Class</h2>
+    <p>To center text within the `.form3` class, use the following CSS:</p>
+    <pre><code> .form3 {
+        text-align: center;
+    } </code></pre>
+</div>
+
+<div class="section">
+    <h2>2. Adding Text Animations</h2>
+    <p>To add text animations similar to the examples, use the following CSS for animation effects:</p>
+    <pre><code> .animated-text {
+        animation: fadeIn 2s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    } </code></pre>
+    <p>Refer to your preferred animation examples for more specific styles and effects.</p>
+</div>
+
+<div class="section">
+    <h2>3. Positioning Search Box and 'Sign Out' Link</h2>
+    <p>To position a search box and 'Sign Out' link at the right end of the navigation bar, use the following CSS:</p>
+    <pre><code> .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar .search-box {
+        margin-left: auto;
+    }
+    
+    .navbar .sign-out {
+        margin-left: 20px;
+    } </code></pre>
+</div>
+
+<div class="section">
+    <h2>4. Adding Glowing Borders</h2>
+    <p>To add a glowing border around the top and bottom images, use the following CSS:</p>
+    <pre><code> .top-image, .bottom-image {
+        border: 5px solid rgba(255, 105, 135, 0.8);
+        box-shadow: 0 0 10px rgba(255, 105, 135, 0.8);
+    } </code></pre>
+</div>
+
+<div class="section">
+    <h2>5. Implementing 3D Look for Card Content</h2>
+    <p>To create a 3D effect for the card image and content, use the following CSS:</p>
+    <pre><code> .card {
+        perspective: 1000px;
+    }
+    
+    .card-content {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+    
+    .card-content:hover {
+        transform: rotateY(10deg);
+    } </code></pre>
+</div>
+
+<div class="section">
+    <h2>6. Infinite Scroll for Image Gallery</h2>
+    <p>To implement infinite scroll in your image gallery, you need JavaScript. Here is a basic example:</p>
+    <pre><code> window.addEventListener('scroll', function() {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            loadMoreImages();
+        }
+    });
+    
+    function loadMoreImages() {
+        // Add code to load more images here
+    } </code></pre>
+</div>
+
+<div class="section">
+    <h2>7. Changing Product Images on Click</h2>
+    <p>To change product images on click, use the following JavaScript code:</p>
+    <pre><code> document.querySelectorAll('.product-thumbnail').forEach(function(thumbnail) {
+        thumbnail.addEventListener('click', function() {
+            document.querySelector('.main-product-image').src = this.src;
+        });
+    }); </code></pre>
+</div>
+
+<div class="section">
+    <h2>8. Designing Cart Page</h2>
+    <p>To design an attractive cart page, use Bootstrap 5 components and customize with CSS to match the light orange color palette:</p>
+    <pre><code> .cart-page {
+        background-color: #fff;
+        color: #333;
+    }
+    
+    .cart-item {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+    
+    .cart-total {
+        color: #d04536;
+    } </code></pre>
+</div>
+
+<div class="section">
+    <h2>9. Designing Checkout Page</h2>
+    <p>For the checkout page, use Bootstrap 5.3 and a light orange color palette to make it attractive:</p>
+    <pre><code> .checkout-page {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    
+    .checkout-header {
+        color: #d04536;
+    }
+    
+    .checkout-button {
+        background-color: #d04536;
+        color: #fff;
+    } </code></pre>
+</div>
+
+<div class="section">
+    <h2>10. User Profile Page Design</h2>
+    <p>Design the user profile page using Bootstrap 5.3 and the light orange color palette:</p>
+    <pre><code> .profile-page {
+        background-color: #fff;
+        color: #333;
+    }
+    
+    .profile-header {
+        color: #d04536;
+    }
+    
+    .profile-info {
+        margin: 20px 0;
+    } </code></pre>
+</div>
+
+<div class="section">
+    <h2>11. Positioning Customer Image on Card</h2>
+    <p>To position the customer image on top of the card and center it horizontally:</p>
+    <pre><code> .card {
+        position: relative;
+    }
+    
+    .customer-image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    } </code></pre>
+</div>
+
+<h1>Instructions for Modifying Hero Section with Background Images (index.html)</h1>
+
+<div class="section">
+    <h2>HTML Structure</h2>
+    <p>Here is the basic HTML structure for the hero section with background images:</p>
+    <div class="code">
+        &lt;div class="col-12"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="row"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="hero-section overlayHome3"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="background-images-home-one"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="background-home-one" src="resources/home3/bg/29.png" alt=""&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="background-home-one" src="resources/home3/bg/24.png" alt=""&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- More background images --&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &lt;/div&gt;
+    </div>
+</div>
+
+<div class="section">
+    <h2>JavaScript for Background Image Rotation</h2>
+    <p>To rotate background images automatically:</p>
+    <div class="code">
+        &lt;script&gt;<br>
+        &nbsp;&nbsp;document.addEventListener("DOMContentLoaded", function () {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;let backgroundImages = document.querySelectorAll(".background-images-home-one img");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;if (backgroundImages.length > 0) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let imageIndex = 0;<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function changeBackground() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundImages.forEach((img) =&gt; img.classList.remove("showContent"));<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imageIndex = (imageIndex + 1) % backgroundImages.length;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundImages[imageIndex].classList.add("showContent");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;changeBackground();<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setInterval(changeBackground, 10000); // Change image every 10 seconds<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;});<br>
+        &lt;/script&gt;
+    </div>
+</div>
+
+<div class="section">
+    <h2>Instructions Summary</h2>
+    <p>Follow these steps to modify the hero section:</p>
+    <ol>
+        <li>Access the <code>index.html</code> file and locate the hero section.</li>
+        <li>Update the <code>&lt;img&gt;</code> tags under <code>background-images-home-one</code> for background images.</li>
+        <li>Modify the <code>&lt;img&gt;</code> tags under <code>home3-logo</code> for logo images.</li>
+        <li>Adjust the text content within the <code>&lt;div id="autotypedtext"&gt;</code> for dynamic text.</li>
+        <li>Include the provided JavaScript snippet to enable automatic background image rotation.</li>
+        <li>Test your modifications in different browsers to ensure compatibility and functionality.</li>
+    </ol>
+</div>
+
+
+<h1>Instructions for Modifying JavaScript Functionalities</h1>
+
+<!-- Loading Header/Footer Content -->
+<div class="section">
+    <h2>Loading Header/Footer Content</h2>
+    <p>1. To modify the loading of header and footer content:</p>
+    <ol>
+        <li>Create or modify the content of your <code>header.html</code> and <code>footer.html</code> files.</li>
+        <li>Ensure placeholders are present in your main HTML file where the content will be loaded:
+            <div class="code">
+                &lt;div id="header-placeholder"&gt;&lt;/div&gt;<br>
+                &lt;div id="footer-placeholder"&gt;&lt;/div&gt;
+            </div>
+        </li>
+        <li>Customize the JavaScript fetch requests to load different content files if needed.</li>
+    </ol>
+    <div class="code">
+        &lt;script&gt;<br>
+        &nbsp;&nbsp;fetch("header.html")<br>
+        &nbsp;&nbsp;.then((response) =&gt; response.text())<br>
+        &nbsp;&nbsp;.then((data) =&gt; {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;const headerPlaceholder = document.getElementById("header-placeholder");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;if (headerPlaceholder) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;headerPlaceholder.innerHTML = data;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;})<br>
+        &nbsp;&nbsp;.catch((error) =&gt; console.error("Error loading header:", error));<br><br>
+        
+        &nbsp;&nbsp;fetch("footer.html")<br>
+        &nbsp;&nbsp;.then((response) =&gt; response.text())<br>
+        &nbsp;&nbsp;.then((data) =&gt; {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;const footerPlaceholder = document.getElementById("footer-placeholder");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;if (footerPlaceholder) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;footerPlaceholder.innerHTML = data;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;})<br>
+        &nbsp;&nbsp;.catch((error) =&gt; console.error("Error loading footer:", error));<br>
+        &lt;/script&gt;
+    </div>
+</div>
+
+
+<div class="step">
+    <h2>2. Modify Typewriter Texts</h2>
+    <p>To change the texts that appear in the typewriter effect, locate the following code block:</p>
+    <div class="code-block">
+      <pre>
+const texts = ["Best Food", "Delicious", "Enjoy your treat!"];
+      </pre>
+    </div>
+    <p>Update the array with your desired texts, for example:</p>
+    <div class="code-block">
+      <pre>
+const texts = ["Welcome Home", "Stay Safe", "Have a Nice Day!"];
+      </pre>
+    </div>
+  </div>
+
+  <div class="step">
+    <h2>3. Adjust Typing and Erasing Speeds</h2>
+    <p>To change the typing and erasing speeds, locate these variables:</p>
+    <div class="code-block">
+      <pre>
+const typingSpeed = 200;
+const erasingSpeed = 100;
+      </pre>
+    </div>
+    <p>Adjust the values to suit your needs. For example, to make the typing faster and erasing slower:</p>
+    <div class="code-block">
+      <pre>
+const typingSpeed = 100;
+const erasingSpeed = 200;
+      </pre>
+    </div>
+  </div>
+
+  <div class="step">
+    <h2>4. Change the Delay Between Texts</h2>
+    <p>To modify the delay between each text display, locate the following variable:</p>
+    <div class="code-block">
+      <pre>
+const delayBetweenTexts = 2000;
+      </pre>
+    </div>
+    <p>Update the value to your preferred delay time in milliseconds. For example, to set a 3-second delay:</p>
+    <div class="code-block">
+      <pre>
+const delayBetweenTexts = 3000;
+      </pre>
+    </div>
+  </div>
+
+  <div class="step">
+    <h2>5. Modify Wiggle Effect</h2>
+    <p>To add or modify the wiggle effect, you can update the class or apply additional styles. Locate this code block:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  const wiggleBox = document.querySelector(".form2");
+  if (wiggleBox) {
+    wiggleBox.classList.add("wiggle");
+  }
+});
+      </pre>
+    </div>
+    <p>Ensure you have a corresponding CSS class for the <code>wiggle</code> effect. For example:</p>
+    <div class="code-block">
+      <pre>
+
+.wiggle {
+  animation: wiggle 3s ease-in-out;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotateZ(0);
+  }
+  10% {
+    transform: rotateZ(-5deg);
+  }
+  20% {
+    transform: rotateZ(3deg);
+  }
+  30% {
+    transform: rotateZ(-3deg);
+  }
+  40% {
+    transform: rotateZ(2deg);
+  }
+  50% {
+    transform: rotateZ(-2deg);
+  }
+  60% {
+    transform: rotateZ(1deg);
+  }
+  70% {
+    transform: rotateZ(-1deg);
+  }
+  80%,
+  90% {
+    transform: rotateZ(0);
+  }
+}
+
+      </pre>
+    </div>
+  </div>
+
+   <!-- Background Image Change -->
+   <div class="step">
+    <h2>1. Change Background Images</h2>
+    <h3>Home Page</h3>
+    <p>To change the background images that rotate on the homepage, locate this section:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  let backgroundImages = document.querySelectorAll(".background-images img");
+  if (backgroundImages.length > 0) {
+    let imageIndex = 0;
+
+    function changeBackground() {
+      backgroundImages.forEach((img) => img.classList.remove("showContent"));
+      imageIndex = (imageIndex + 1) % backgroundImages.length;
+      backgroundImages[imageIndex].classList.add("showContent");
+    }
+
+    changeBackground();
+    setInterval(changeBackground, 10000);
+  }
+});
+      </pre>
+    </div>
+    <p>To modify the images, ensure your HTML contains images with the class <code>.background-images</code> and the <code>showContent</code> class for visibility control. Update the interval by changing <code>10000</code> to your desired time in milliseconds.</p>
+  </div>
+
+  <!-- Cupcake Image Loading Animation -->
+  <div class="step">
+    <h2>2. Cupcake Image Loading Animation</h2>
+    <p>To add an animation to the cupcake image, use this code:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  const cupcakeElement = document.querySelector(".cupcake");
+  if (cupcakeElement) {
+    cupcakeElement.classList.add("animate");
+  }
+});
+      </pre>
+    </div>
+    <p>Ensure the <code>.cupcake</code> element has the CSS class <code>animate</code> defined in your stylesheet.</p>
+  </div>
+
+  <!-- Home Page Section 1 Background Image Change -->
+  <div class="step">
+    <h2>3. Change Background Images for Home Section 1</h2>
+    <p>To change the rotating background images for another section on your homepage, use this code:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  let backgroundImageshomeOne = document.querySelectorAll(".background-images-home-one img");
+  if (backgroundImageshomeOne.length > 0) {
+    let imageIndexhomeOne = 0;
+
+    function changeBackgroundhomeOne() {
+      backgroundImageshomeOne.forEach((img) => img.classList.remove("showContentHomeOne"));
+      imageIndexhomeOne = (imageIndexhomeOne + 1) % backgroundImageshomeOne.length;
+      backgroundImageshomeOne[imageIndexhomeOne].classList.add("showContentHomeOne");
+    }
+
+    changeBackgroundhomeOne();
+    setInterval(changeBackgroundhomeOne, 8000);
+  }
+});
+      </pre>
+    </div>
+    <p>To modify the images, ensure your HTML contains images with the class <code>.background-images-home-one</code> and the <code>showContentHomeOne</code> class for visibility control. Update the interval by changing <code>8000</code> to your desired time in milliseconds.</p>
+  </div>
+
+  <!-- Auto Text Display -->
+  <div class="step">
+    <h2>4. Auto Text Display</h2>
+    <p>To change the rotating texts displayed automatically, use this code:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  const autoTextElement = document.querySelector("#autotypedtext");
+  if (autoTextElement) {
+    const autoTexts = [
+      "Welcome to Our Restaurant",
+      "Experience the best dining in town",
+      "Enjoy your treat!",
+    ];
+    let index = 0;
+
+    function showAutoText() {
+      autoTextElement.style.opacity = 0;
+      autoTextElement.style.transform = " translateY(20px)";
+      setTimeout(() => {
+        autoTextElement.textContent = autoTexts[index];
+        index = (index + 1) % autoTexts.length;
+        autoTextElement.style.transform = " translateY(0)";
+        autoTextElement.style.opacity = 1;
+      }, 1000);
+      setTimeout(showAutoText, 10000);
+    }
+
+    showAutoText();
+  }
+});
+      </pre>
+    </div>
+    <p>Update the <code>autoTexts</code> array with your desired texts, and adjust the intervals by changing the values in <code>setTimeout</code> functions.</p>
+  </div>
+
+  <!-- Logo Rotation -->
+  <div class="step">
+    <h2>5. Rotate Logos</h2>
+    <p>To implement a rotating logo effect, use this code:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  const logos = document.querySelectorAll(".logo-images");
+  if (logos.length > 0) {
+    let currentIndex = 0;
+
+    function showNextLogo() {
+      logos[currentIndex].classList.remove("visible");
+      currentIndex = (currentIndex + 1) % logos.length;
+      setTimeout(() => {
+        logos[currentIndex].classList.add("visible");
+      }, 100);
+    }
+
+    logos[currentIndex].classList.add("visible");
+    setInterval(showNextLogo, 2000);
+  }
+});
+      </pre>
+    </div>
+    <p>Ensure your HTML contains logos with the class <code>.logo-images</code> and the <code>visible</code> class for visibility control. Adjust the interval by changing <code>2000</code> to your desired time in milliseconds.</p>
+  </div>
+
+  <!-- Comment Section Background Image Change -->
+  <div class="step">
+    <h2>6. Change Background Images for Comment Section</h2>
+    <p>To change the rotating background images for the comment section, use this code:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  let commentbgImgs = document.querySelectorAll(".h3background-container img");
+  if (commentbgImgs.length > 0) {
+    let comImgIndex = 0;
+
+    function changeCommentBackground() {
+      commentbgImgs.forEach((img) => img.classList.remove("showContent3"));
+      comImgIndex = (comImgIndex + 1) % commentbgImgs.length;
+      commentbgImgs[comImgIndex].classList.add("showContent3");
+    }
+
+    changeCommentBackground();
+    setInterval(changeCommentBackground, 6000);
+  }
+});
+      </pre>
+    </div>
+    <p>Ensure your HTML contains images with the class <code>.h3background-container</code> and the <code>showContent3</code> class for visibility control. Update the interval by changing <code>6000</code> to your desired time in milliseconds.</p>
+  </div>
+
+  <!-- Prevent Card Flip on Scroll -->
+  <div class="step">
+    <h2>7. Prevent Card Flip on Scroll</h2>
+    <p>To prevent cards from flipping during scroll, use this code:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".chefSection .card");
+  if (cards.length > 0) {
+    function handleScrollStart() {
+      cards.forEach((card) => {
+        card.classList.add("no-flip");
+      });
+    }
+
+    function handleScrollEnd() {
+      setTimeout(() => {
+        cards.forEach((card) => {
+          card.classList.remove("no-flip");
+        });
+      }, 500);
+    }
+
+    document.addEventListener("scroll", function() {
+      handleScrollStart();
+      handleScrollEnd();
+    });
+  }
+});
+      </pre>
+    </div>
+    <p>Ensure your HTML contains cards with the class <code>.chefSection .card</code> and the <code>no-flip</code> class to disable flipping.</p>
+  </div>
+
+  <!-- Reservation Background Image Change -->
+  <div class="step">
+    <h2>8. Change Background Images for Reservation Section</h2>
+    <p>To change the rotating background images for the reservation section, use this code:</p>
+    <div class="code-block">
+      <pre>
+document.addEventListener("DOMContentLoaded", function () {
+  let reservbgImgs = document.querySelectorAll(".h3Revervation-container img");
+  if (reservbgImgs.length > 0) {
+    let reservIndex = 0;
+
+    function changeReserveBackground() {
+      reservbgImgs.forEach((img) => img.classList.remove("showContent4"));
+      reservIndex = (reservIndex + 1) % reservbgImgs.length;
+      reservbgImgs[reservIndex].classList.add("showContent4");
+    }
+
+    changeReserveBackground();
+    setInterval(changeReserveBackground, 10000);
+  }
+});
+      </pre>
+    </div>
+    <p>Ensure your HTML contains images with the class <code>.h3Revervation-container</code> and the <code>showContent4</code> class for visibility control. Update the interval by changing <code>10000</code> to your desired time in milliseconds.</p>
+  </div>
+
+  <!-- Single Product View Functions -->
+  <div class="step">
+    <h2>9. Single Product View Functions</h2>
+    <p>To handle quantity adjustments and navigation in the single product view, use these functions:</p>
+    <div class="code-block">
+      <pre>
+function decreaseQuantity() {
+  let quantityInput = document.getElementById("quantity-input");
+  let currentValue = parseInt(quantityInput.value);
+
+  if (currentValue > 1) {
+    quantityInput.value = currentValue - 1;
+  }
+}
+
+function increaseQuantity() {
+  let quantityInput = document.getElementById("quantity-input");
+  let currentValue = parseInt(quantityInput.value);
+
+  quantityInput.value = currentValue + 1;
+}
+
+function addToCart() {
+  let quantityInput = document.getElementById("quantity-input");
+  let quantity = parseInt(quantityInput.value);
+  console.log(`Adding ${quantity} item(s) to cart.`);
+}
+
+function spView() {
+  window.location = "singleProductView.html";
+}
+
+function checkOut() {
+  window.location = "checkOut.html";
+}
+      </pre>
+    </div>
+    <p>Include these functions in your script to manage quantity input and navigation actions for your product pages.</p>
+  </div>
+
+  <!-- Swiper and Owl Carousel Initialization -->
+  <div class="step">
+    <h2>10. Initialize Swiper and Owl Carousel</h2>
+    <p>To initialize Swiper and Owl Carousel with specific settings, use this code:</p>
+    <div class="code-block">
+      <pre>
+// Check if Swiper is defined before initializing
+if (typeof Swiper !== "undefined") {
+  var swiper1 = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 110,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 500, // Delay between slides in milliseconds (0.5 seconds here)
+      disableOnInteraction: false, // Continue autoplay after user interactions
+    },
+    speed: 2000, // Slide transition speed in milliseconds (2 seconds here)
+  });
+
+  var swiper2 = new Swiper(".mySwiper2", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 110,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 500, // Delay between slides in milliseconds (0.5 seconds here)
+      disableOnInteraction: false, // Continue autoplay after user interactions
+      reverseDirection: true,
+    },
+    speed: 2000, // Slide transition speed in milliseconds (2 seconds here)
+  });
+}
+
+// Check if the current page requires Owl Carousel
+if (document.querySelector("#testimonial-slider")) {
+  $(document).ready(function () {
+    var owl = $("#testimonial-slider");
+
+    owl.owlCarousel({
+      items: 1,
+      itemsDesktop: [1000, 1],
+      itemsDesktopSmall: [979, 1],
+      itemsTablet: [768, 1],
+      pagination: true,
+      navigation: false,
+      navigationText: ["", ""],
+      singleItem: true,
+      smartSpeed: 7000, // Speed of the transition in milliseconds (7 seconds)
+      autoPlay: 10000,
+      loop: true,
+      rewindSpeed: 0,
+      stopOnHover: true,
+      autoplayTimeout: 90000, // Time between each auto transition in milliseconds (10 seconds)
+    });
+
+    // Smooth Scroll Initialization
+    ScrollReveal().reveal("#testimonial-slider", {
+      duration: 800,
+    });
+  });
+}
+      </pre>
+    </div>
+    <p>Ensure that Swiper and Owl Carousel libraries are included in your project. Customize the settings as needed for your design.</p>
+  </div>
+
+  <!-- Save and Test -->
+  <div class="step">
+    <h2>11. Save and Test Your Changes</h2>
+    <p>After making the desired modifications, save your changes and test the page in your browser to ensure everything works correctly.</p>
+    <p class="important">Important: Always backup your original files before making any changes.</p>
+  </div>
+
+  <h1>Countdown Timer and Back-to-Top Button Instructions</h1>
+
+  <!-- Countdown Timer -->
+  <div class="step">
+    <h2>1. Countdown Timer</h2>
+    <p>This script displays a countdown timer to a specified date.</p>
+    <div class="code-block">
+      <pre>
+        // JavaScript code for countdown timer
+        const countdownCommingZoon = () => {
+          const countDate = new Date("December 31, 2024 00:00:00").getTime();
+          const now = new Date().getTime();
+          const gap = countDate - now;
+
+          const second = 1000;
+          const minute = second * 60;
+          const hour = minute * 60;
+          const day = hour * 24;
+
+          const textDay = Math.floor(gap / day);
+          const textHour = Math.floor((gap % day) / hour);
+          const textMinute = Math.floor((gap % hour) / minute);
+          const textSecond = Math.floor((gap % minute) / second);
+
+          const daysElement = document.getElementById("commingZiddays");
+          const hoursElement = document.getElementById("commingZidhours");
+          const minutesElement = document.getElementById("commingZidminutes");
+          const secondsElement = document.getElementById("commingZidseconds");
+
+          if (daysElement) daysElement.innerText = textDay;
+          if (hoursElement) hoursElement.innerText = textHour;
+          if (minutesElement) minutesElement.innerText = textMinute;
+          if (secondsElement) secondsElement.innerText = textSecond;
+        };
+
+        setInterval(countdownCommingZoon, 1000);
+      </pre>
+    </div>
+    <p>Make sure to include HTML elements with IDs <code>commingZiddays</code>, <code>commingZidhours</code>, <code>commingZidminutes</code>, and <code>commingZidseconds</code> where you want the countdown displayed.</p>
+  </div>
+
+  <!-- Back-to-Top Button -->
+  <div class="step">
+    <h2>2. Back-to-Top Button</h2>
+    <p>This script shows a "Back to Top" button and enables smooth scrolling to the top of the page.</p>
+    <div class="code-block">
+      <pre>
+        // JavaScript code for back-to-top button
+        function initializeBackToTopButton() {
+          var backToTopButton = document.getElementById("back-to-top");
+          var hideTimeout;
+
+          if (backToTopButton) {
+            // Show/hide the back-to-top button on scroll
+            window.addEventListener("scroll", function () {
+              if (window.scrollY > 50) {
+                backToTopButton.style.display = "flex";
+                resetHideTimeout();
+              } else {
+                backToTopButton.style.display = "none";
+              }
+            });
+
+            // Smooth scroll back to top when the button is clicked
+            backToTopButton.addEventListener("click", function () {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            });
+
+            function resetHideTimeout() {
+              if (hideTimeout) {
+                clearTimeout(hideTimeout);
+              }
+              hideTimeout = setTimeout(function () {
+                backToTopButton.style.display = "none";
+              }, 5000); // Adjust the time (3000 ms = 3 seconds) as needed
+            }
+          }
+        }
+
+        // Initialize the back-to-top button on page load
+        window.addEventListener("load", initializeBackToTopButton);
+      </pre>
+    </div>
+
+    
+<div class="section">
+    <h2>Additional Notes</h2>
+    <div class="note">
+        <p>Ensure you keep a backup of the original files before making changes.</p>
+    </div>
+    <div class="warning">
+        <p>Be cautious when editing JavaScript files to avoid conflicts. Use unique variable names if you are adding new scripts.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Contact Support</h2>
+    <p>If you encounter any issues or need further assistance, please contact support at:</p>
+    <p>Email: <a href="">claireophelia593@gmail.com</a></p>
+  
+</div>
+ 
+</div>
+</div>
+
+</body>
+</html>
